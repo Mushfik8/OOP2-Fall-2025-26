@@ -20,13 +20,9 @@ class MortageCalculator
 
         int years = int.Parse(Console.ReadLine()!);
 
-        // Calculation Section 
-
         double r = (annualRate / 100) / 12; 
 
         int n = years * 12;                
-
-        // Formula: M = P * [ r(1+r)^n / ((1+r)^n - 1) ]
 
         double M = P * (r * Math.Pow(1 + r, n)) / (Math.Pow(1 + r, n) - 1);
 
@@ -49,3 +45,5 @@ class MortageCalculator
     }
 
 }
+
+//mushfik8
